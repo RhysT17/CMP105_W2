@@ -25,5 +25,13 @@ private:
 	Input* input;
 
 	// Add your object here
+	sf::CircleShape circle;
+	sf::Text mouseData;
+	sf::Font mouseFont;
+	sf::String mouseX, mouseY;
+	sf::Vector2f dragCoordsInitial, dragCoordsEnd;
+	float dragDistance;
+	bool dragChecked;
 
+	void calculateDrag();
 };
